@@ -1,0 +1,15 @@
+{
+  "id": "audit-kit",
+  "name": "Audit Kit",
+  "description": "Adds a repository audit skill that reports risky changes before they are committed.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Reasonix Contributors",
+  "homepage": "https://github.com/esengine/reasonix-registry",
+  "minVersion": "0.1.0",
+  "compat": {
+    "platforms": ["any"],
+    "frontends": ["studio"]
+  },
+  "binaries": []
+}

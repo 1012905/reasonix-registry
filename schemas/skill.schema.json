@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reasonix.io/registry/schemas/skill.schema.json",
+  "title": "skill.json",
+  "description": "Registry metadata for one skill. The skill body lives in SKILL.md beside it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "version", "license", "minVersion", "compat"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{1,63}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 280
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+    },
+    "license": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9.+-]{2,64}$"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "homepage": {
+      "type": "string",
+      "pattern": "^https://",
+      "maxLength": 2048
+    },
+    "repository": {
+      "type": "string",
+      "pattern": "^https://",
+      "maxLength": 2048
+    },
+    "minVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+    },
+    "compat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["platforms", "frontends"],
+      "properties": {
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["windows", "macos", "linux", "any"]
+          }
+        },
+        "frontends": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["studio", "cli"]
+          }
+        }
+      }
+    }
+  }
+}

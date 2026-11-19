@@ -1,0 +1,20 @@
+# Ownership for curated registry content.
+#
+# Two owners on purpose: GitHub requests review from both, and a content
+# directory is never left with a single reviewer. The last matching rule wins.
+
+*                                   @esengine @SivanCola
+
+/skills/                            @esengine @SivanCola
+/themes/                            @esengine @SivanCola
+
+# Manifests reach a user's machine with their own URLs and commands.
+/mcp/                               @esengine @SivanCola
+/plugins/                           @esengine @SivanCola
+
+# The gates and the trust root decide what the gates are allowed to pass.
+/schemas/                           @esengine @SivanCola
+/scripts/                           @esengine @SivanCola
+/registry.pub                       @esengine @SivanCola
+/revoked.json                       @esengine @SivanCola
+/.github/workflows/                 @esengine @SivanCola

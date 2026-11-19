@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "harbor-dusk",
+  "name": "Harbor Dusk",
+  "author": "Reasonix Contributors",
+  "description": "Dusk over open water: deep teal, a low warm sun and a bay on the right.",
+  "license": "MIT",
+  "version": "1.0.0",
+  "minVersion": "0.1.0",
+  "compat": {
+    "platforms": ["any"],
+    "frontends": ["studio"]
+  },
+  "tokens": {
+    "light": {
+      "bg": "#F5F8F7",
+      "bgSoft": "#EAF0EE",
+      "bgElev": "#FFFFFF",
+      "panel": "#FFFFFF",
+      "border": "#BCCBC7",
+      "borderSoft": "#DDE7E4",
+      "fg": "#14231F",
+      "fgDim": "#4A615B",
+      "fgFaint": "#758B85",
+      "accent": "#17635B",
+      "accentFg": "#FFFFFF",
+      "float": "#FFFFFF",
+      "floatHi": "#FFFFFF",
+      "codeBg": "#EDF3F1",
+      "sunkBg": "#E7EFEC",
+      "synKeyword": "#17635B",
+      "synString": "#7A5A12",
+      "synNumber": "#8B4A2B",
+      "synFunction": "#2A4F8A"
+    },
+    "dark": {
+      "bg": "#0C1518",
+      "bgSoft": "#121F23",
+      "bgElev": "#17272C",
+      "panel": "#132327",
+      "border": "#2C464C",
+      "borderSoft": "#22383E",
+      "fg": "#EAF4F2",
+      "fgDim": "#A9C3BE",
+      "fgFaint": "#7E9A95",
+      "accent": "#63C7B8",
+      "accentFg": "#062019",
+      "float": "#17272C",
+      "floatHi": "#1F3237",
+      "codeBg": "#0F1D21",
+      "sunkBg": "#0C1518",
+      "synKeyword": "#63C7B8",
+      "synString": "#B9D38A",
+      "synNumber": "#E5B877",
+      "synFunction": "#8FB2E8"
+    }
+  },
+  "recipes": {
+    "density": "comfortable",
+    "corners": "round"
+  },
+  "background": {
+    "image": "background.webp",
+    "focusX": 0.68,
+    "focusY": 0.45,
+    "safeArea": "left",
+    "homeOpacity": 1.0,
+    "taskOpacity": 0.18,
+    "overlayStrength": 0.7
+  }
+}

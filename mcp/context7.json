@@ -1,0 +1,18 @@
+{
+  "id": "context7",
+  "name": "Context7",
+  "description": "Version-specific documentation for the libraries a project imports.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Upstash",
+  "homepage": "https://context7.com",
+  "minVersion": "0.1.0",
+  "compat": {
+    "platforms": ["any"],
+    "frontends": ["studio"]
+  },
+  "transport": {
+    "type": "http",
+    "url": "https://mcp.context7.com/mcp"
+  }
+}

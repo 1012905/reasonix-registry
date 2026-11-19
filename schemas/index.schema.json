@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reasonix.io/registry/schemas/index.schema.json",
+  "title": "index.json",
+  "description": "The generated catalogue. Every entry is sorted by kind then id, and the whole file is what the release signature covers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "entries"],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "version", "url", "sha256", "files", "minVersion", "compat", "license", "revoked"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]{1,63}$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": ["mcp", "plugins", "skills", "themes"]
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^(mcp/[a-z0-9._-]+\\.json|(skills|themes|plugins)/[a-z0-9._-]+/)$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "files": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["path", "sha256", "size"],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "pattern": "^(mcp/[a-z0-9._-]+\\.json|(skills|themes|plugins)/[a-z0-9._-]+/.+)$",
+                  "maxLength": 1024
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "size": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          },
+          "minVersion": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$"
+          },
+          "compat": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["platforms", "frontends"],
+            "properties": {
+              "platforms": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "enum": ["windows", "macos", "linux", "any"]
+                }
+              },
+              "frontends": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "enum": ["studio", "cli"]
+                }
+              }
+            }
+          },
+          "license": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9.+-]{2,64}$"
+          },
+          "revoked": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

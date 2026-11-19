@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "context7",
+      "kind": "mcp",
+      "version": "1.0.0",
+      "url": "mcp/context7.json",
+      "sha256": "837e35ffc8204550cfe9a1c2be5fcc3443700a660c6cbb72f393fdf1e75c9bef",
+      "files": [
+        {
+          "path": "mcp/context7.json",
+          "sha256": "81ddff0a63ebcf4d8fcfaf9995408e5943fcb380f2881481546ac00961f05a74",
+          "size": 418
+        }
+      ],
+      "minVersion": "0.1.0",
+      "compat": {
+        "platforms": [
+          "any"
+        ],
+        "frontends": [
+          "studio"
+        ]
+      },
+      "license": "MIT",
+      "revoked": false
+    },
+    {
+      "id": "audit-kit",
+      "kind": "plugins",
+      "version": "1.0.0",
+      "url": "plugins/audit-kit/",
+      "sha256": "78cae46cdb1701f626b916f7721437ded1b4332cad868165d8399a1c840e5cc7",
+      "files": [
+        {
+          "path": "plugins/audit-kit/package/reasonix-plugin.json",
+          "sha256": "c586fbf8210cd672045e3e2de3547901f53dfa6c783e1b5ae76053f5849d7e86",
+          "size": 242
+        },
+        {
+          "path": "plugins/audit-kit/package/skills/audit/SKILL.md",
+          "sha256": "1cd9602e4495a326ab9e88b9ee7594924e8d93298d603d83b089bb0948c37e4f",
+          "size": 804
+        },
+        {
+          "path": "plugins/audit-kit/plugin.json",
+          "sha256": "65cdb1ba2589b60086daecc10f1f26b72a16d159c18e3291d7ed96ba2448b5f4",
+          "size": 409
+        }
+      ],
+      "minVersion": "0.1.0",
+      "compat": {
+        "platforms": [
+          "any"
+        ],
+        "frontends": [
+          "studio"
+        ]
+      },
+      "license": "MIT",
+      "revoked": false
+    },
+    {
+      "id": "release-notes",
+      "kind": "skills",
+      "version": "1.0.0",
+      "url": "skills/release-notes/",
+      "sha256": "8c30c2b4ca0d1da389828dd8c6d6730aec0d8bef1c05428e2f7554bc70ffbb04",
+      "files": [
+        {
+          "path": "skills/release-notes/SKILL.md",
+          "sha256": "046e3bf572e78974e1ddf8b2cecd9f538dc3eb67b0eb84417341741146d5fe64",
+          "size": 1149
+        },
+        {
+          "path": "skills/release-notes/skill.json",
+          "sha256": "7d8dc18b2bfa866953f1a9b654869f0ac464b2bb8300f70a57c420e352fc69fa",
+          "size": 397
+        }
+      ],
+      "minVersion": "0.1.0",
+      "compat": {
+        "platforms": [
+          "any"
+        ],
+        "frontends": [
+          "studio",
+          "cli"
+        ]
+      },
+      "license": "MIT",
+      "revoked": false
+    },
+    {
+      "id": "harbor-dusk",
+      "kind": "themes",
+      "version": "1.0.0",
+      "url": "themes/harbor-dusk/",
+      "sha256": "8a5a2fd16a698cb2d50c4874bbdef36d4941192f4e4225832a1bbbb4457198b6",
+      "files": [
+        {
+          "path": "themes/harbor-dusk/assets/background.webp",
+          "sha256": "7c4400db16269498d5800aa0f6837ade5e80a419dcb48c34d642c4a53653fa8b",
+          "size": 28420
+        },
+        {
+          "path": "themes/harbor-dusk/assets/preview.webp",
+          "sha256": "7ccaf66cdb4958d770ed26da8fc282e71a3fd849c9aacd87fdcff0cb66cc3f69",
+          "size": 3908
+        },
+        {
+          "path": "themes/harbor-dusk/theme.json",
+          "sha256": "155c2b5dd44f4a351771fa8ec469db961caf6965717a55b8e7f21c40ec938034",
+          "size": 1719
+        }
+      ],
+      "minVersion": "0.1.0",
+      "compat": {
+        "platforms": [
+          "any"
+        ],
+        "frontends": [
+          "studio"
+        ]
+      },
+      "license": "MIT",
+      "revoked": false
+    }
+  ]
+}

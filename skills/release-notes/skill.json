@@ -1,0 +1,14 @@
+{
+  "id": "release-notes",
+  "name": "Release Notes",
+  "description": "Draft release notes from the commits and merged pull requests since a tag.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Reasonix Contributors",
+  "homepage": "https://github.com/esengine/reasonix-registry",
+  "minVersion": "0.1.0",
+  "compat": {
+    "platforms": ["any"],
+    "frontends": ["studio", "cli"]
+  }
+}
