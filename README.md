@@ -75,7 +75,7 @@ the entry; both are checked.
 ## Signing key
 
 The registry is signed with the same minisign key as Reasonix app updates, ID
-`AF12CA46F4A9EBB0`; the public half is committed as `registry.pub` and embedded
+`441E92EFE08CA57F`; the public half is committed as `registry.pub` and embedded
 in the kernel. The private half exists only as the `MINISIGN_PRIVATE_KEY` and
 `MINISIGN_PASSWORD` secrets of this repository. Rotating the key means changing
 the kernel constant, `registry.pub`, and both secrets in one release.
